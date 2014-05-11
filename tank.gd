@@ -1,30 +1,96 @@
-
 extends KinematicBody2D
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+export var tankid = "tank1"
+
+#resources
+var bullet = null
+var track = null
+var animation = null
+
+#members
+var angle = null
+var anim = null
+var shooting = false
+
+#input
+var up = null
+var down = null
+var rright = null
+var rleft = null
+var shoot = null
 
 const MOTION_SPEED=160
+const ROTATION_SPEED=4
 
-func _fixed_process(delta):
+func _process(delta):
+	#debug
+	if Input.is_action_pressed("debug"):
+		get_parent().print_tree()
+		
+	# key definition
+	if (tankid == "tank1"):
+		up = Input.is_action_pressed("ui_up")
+		down = Input.is_action_pressed("ui_down")
+		rright = Input.is_action_pressed("ui_right")
+		rleft = Input.is_action_pressed("ui_left")
+		shoot = Input.is_action_pressed("shoot")
+		
+	elif (tankid == "tank2"):
+		pass
+	else:
+		print("BUG: please asign id to tankid")
 
-	var motion = Vector2()
+	angle = get_rot()
 	
-	if (Input.is_action_pressed("ui_up")):
-		motion+=Vector2(0,-1)
-	if (Input.is_action_pressed("ui_down")):
-		motion+=Vector2(0,1)
-	if (Input.is_action_pressed("ui_left")):
-		motion+=Vector2(-1,0)
-	if (Input.is_action_pressed("ui_right")):
-		motion+=Vector2(1,0)
+	# process actions
+	var motion = Vector2()
+	if (up):
+		motion+=Vector2(-sin(angle),-cos(angle))
+		set_anim("rolling")
+		var ti = track.instance()
+		ti.set_pos(get_pos())
+		ti.set_rot(get_rot())
+		get_parent().add_child(ti)
+		raise()
+		
+	elif (down):
+		motion+=Vector2(sin(angle),cos(angle))
+		set_anim("rolling", true)
+		#animation.play("rolling", -1, -1, true)
+	else:
+		set_anim("idle")
+	
+	if (rleft):
+		angle += ROTATION_SPEED * delta
+		set_rot(angle)
+		
+	if (rright):
+		angle -= ROTATION_SPEED * delta
+		set_rot(angle)
+
+	if (shoot):
+		shooting = true
+		var bi = bullet.instance()
+		bi.set_rot(angle)
+		var pos = get_pos() + get_node("bulletPosition").get_pos()* Vector2(sin(angle),cos(angle))
+		bi.set_pos(pos)
+		get_parent().add_child(bi)
 	
 	motion = motion.normalized() * MOTION_SPEED * delta
 	move(motion)
 	
+	
+
+func set_anim(a, reverse = false):
+	if anim != a:
+		anim = a
+		animation.play(anim)
+
 
 func _ready():
-	# Initalization here
-	set_fixed_process(true)
-	pass
+	bullet = preload("res://bullet.xml")
+	track = preload("res://track.xml")
+	animation = get_node("Sprite/anim")
+	set_anim("idle")
+	
+	set_process(true)

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="19" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://assets/map1l1.png" type="Texture"></ext_resource>
+	<ext_resource path="res://tank.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://hud.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://assets/map1bg.png" type="Texture"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			873.344, 118.484, 894.521, 135.589, 847.28, 210.523, 860.312, 129.073 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="8"> 			894.521, 135.589, 929.545, 155.952, 1050.09, 242.289, 1056.61, 269.168, 1043.58, 295.232, 1024.03, 312.337, 848.909, 244.733, 847.28, 210.523 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://3">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			1022.4, 177.129, 1050.09, 242.289, 929.545, 155.952 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://4">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			898.594, 356.32, 886.376, 324.554, 1024.03, 312.337, 912.44, 362.836 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://5">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			886.376, 324.554, 870.9, 296.861, 848.909, 244.733, 1024.03, 312.337 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://6">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="6"> 			656.685, 228.443, 662.387, 242.289, 645.282, 383.199, 620.032, 384.013, 583.38, 340.03, 637.952, 229.257 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://7">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			567.904, 276.498, 637.952, 229.257, 583.38, 340.03 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://8">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="5"> 			725.104, 287.087, 721.846, 313.151, 645.282, 383.199, 662.387, 242.289, 706.37, 263.466 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://9">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="8"> 			332.512, 519.221, 420.478, 478.496, 523.921, 501.302, 554.057, 542.027, 563.017, 567.277, 517.405, 638.139, 339.842, 648.728, 335.77, 625.922 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://10">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="5"> 			343.1, 678.865, 339.842, 648.728, 517.405, 638.139, 455.502, 677.235, 387.084, 686.195 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://11">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			508.445, 463.835, 523.921, 501.302, 420.478, 478.496 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://12">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="3"> 			551.614, 606.373, 517.405, 638.139, 563.017, 567.277 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://13">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="5"> 			779.367, 933.542, 776.972, 821.578, 784.156, 744.94, 870.375, 926.357, 857.801, 938.332 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://14">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="6"> 			857.202, 676.085, 875.763, 803.616, 870.375, 926.357, 784.156, 744.94, 783.558, 693.448, 789.545, 680.875 </vector2_array>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="84">
+				<string> "map1" </string>
+				<string> "Node2D" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/behind_parent" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "__meta__" </string>
+				<string> "bg" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "l1" </string>
+				<string> "kinetic" </string>
+				<string> "StaticBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "shapes/1/shape" </string>
+				<string> "shapes/1/transform" </string>
+				<string> "shapes/1/trigger" </string>
+				<string> "shapes/2/shape" </string>
+				<string> "shapes/2/transform" </string>
+				<string> "shapes/2/trigger" </string>
+				<string> "shapes/3/shape" </string>
+				<string> "shapes/3/transform" </string>
+				<string> "shapes/3/trigger" </string>
+				<string> "shapes/4/shape" </string>
+				<string> "shapes/4/transform" </string>
+				<string> "shapes/4/trigger" </string>
+				<string> "shapes/5/shape" </string>
+				<string> "shapes/5/transform" </string>
+				<string> "shapes/5/trigger" </string>
+				<string> "shapes/6/shape" </string>
+				<string> "shapes/6/transform" </string>
+				<string> "shapes/6/trigger" </string>
+				<string> "shapes/7/shape" </string>
+				<string> "shapes/7/transform" </string>
+				<string> "shapes/7/trigger" </string>
+				<string> "shapes/8/shape" </string>
+				<string> "shapes/8/transform" </string>
+				<string> "shapes/8/trigger" </string>
+				<string> "shapes/9/shape" </string>
+				<string> "shapes/9/transform" </string>
+				<string> "shapes/9/trigger" </string>
+				<string> "shapes/10/shape" </string>
+				<string> "shapes/10/transform" </string>
+				<string> "shapes/10/trigger" </string>
+				<string> "shapes/11/shape" </string>
+				<string> "shapes/11/transform" </string>
+				<string> "shapes/11/trigger" </string>
+				<string> "shapes/12/shape" </string>
+				<string> "shapes/12/transform" </string>
+				<string> "shapes/12/trigger" </string>
+				<string> "shapes/13/shape" </string>
+				<string> "shapes/13/transform" </string>
+				<string> "shapes/13/trigger" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "build_mode" </string>
+				<string> "polygon" </string>
+				<string> "CollisionPolygon2D 2" </string>
+				<string> "CollisionPolygon2D 3" </string>
+				<string> "CollisionPolygon2D 4" </string>
+				<string> "tank" </string>
+				<string> "KinematicBody2D" </string>
+				<string> "tank 2" </string>
+				<string> "tankid" </string>
+				<string> "CanvasLayer" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 11 </int>
+			<string> "variants" </string>
+			<array  len="42" shared="false">
+				<bool> True </bool>
+				<real> 1 </real>
+				<bool> False </bool>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="false">
+								<string> "res://tank.gd" </string>
+							</array>
+						</dictionary>
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "pixel_snap" </string>
+							<bool> True </bool>
+							<string> "zoom" </string>
+							<real> 0.598737 </real>
+							<string> "ofs" </string>
+							<vector2> -58.069, -231.048 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 0.735762 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<resource  resource_type="Texture" path="res://assets/map1bg.png">  </resource>
+				<int> 1 </int>
+				<int> 0 </int>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> -4, 3 </vector2>
+				<resource  resource_type="Texture" path="res://assets/map1l1.png">  </resource>
+				<int> 14 </int>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
+				<resource  resource_type="Shape2D" path="local://4">  </resource>
+				<resource  resource_type="Shape2D" path="local://5">  </resource>
+				<resource  resource_type="Shape2D" path="local://6">  </resource>
+				<resource  resource_type="Shape2D" path="local://7">  </resource>
+				<resource  resource_type="Shape2D" path="local://8">  </resource>
+				<resource  resource_type="Shape2D" path="local://9">  </resource>
+				<resource  resource_type="Shape2D" path="local://10">  </resource>
+				<resource  resource_type="Shape2D" path="local://11">  </resource>
+				<resource  resource_type="Shape2D" path="local://12">  </resource>
+				<resource  resource_type="Shape2D" path="local://13">  </resource>
+				<resource  resource_type="Shape2D" path="local://14">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+					<string> "_edit_group_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2_array  len="15"> 					912.44, 362.836, 1024.03, 312.337, 1043.58, 295.232, 1056.61, 269.168, 1050.09, 242.289, 1022.4, 177.129, 929.545, 155.952, 894.521, 135.589, 873.344, 118.484, 860.312, 129.073, 847.28, 210.523, 848.909, 244.733, 870.9, 296.861, 886.376, 324.554, 898.594, 356.32 </vector2_array>
+				<vector2_array  len="10"> 					656.685, 228.443, 662.387, 242.289, 706.37, 263.466, 725.104, 287.087, 721.846, 313.151, 645.282, 383.199, 620.032, 384.013, 583.38, 340.03, 567.904, 276.498, 637.952, 229.257 </vector2_array>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2_array  len="13"> 					508.445, 463.835, 523.921, 501.302, 554.057, 542.027, 563.017, 567.277, 551.614, 606.373, 517.405, 638.139, 455.502, 677.235, 387.084, 686.195, 343.1, 678.865, 339.842, 648.728, 335.77, 625.922, 332.512, 519.221, 420.478, 478.496 </vector2_array>
+				<vector2_array  len="9"> 					789.545, 680.875, 857.202, 676.085, 875.763, 803.616, 870.375, 926.357, 857.801, 938.332, 779.367, 933.542, 776.972, 821.578, 784.156, 744.94, 783.558, 693.448 </vector2_array>
+				<resource  resource_type="PackedScene" path="res://tank.xml">  </resource>
+				<vector2> 417, 321 </vector2>
+				<vector2> 980, 653 </vector2>
+				<string> "tank2" </string>
+				<resource  resource_type="PackedScene" path="res://hud.xml">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="357"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 0, 0, 0, 11, 10, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 12, 7, 13, 2, 14, 3, 15, 2, 16, 2, 17, 8, 18, 8, 19, 9, 20, 10, 21, 2, 22, 11, 9, 12, 0, 0, 0, 11, 23, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 13, 7, 4, 8, 5, 12, 14, 13, 2, 14, 3, 15, 2, 16, 2, 17, 8, 18, 8, 19, 9, 20, 10, 21, 2, 22, 11, 0, 2, 0, 25, 24, -1, 55, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 26, 15, 27, 16, 28, 17, 29, 2, 30, 18, 31, 17, 32, 2, 33, 19, 34, 17, 35, 2, 36, 20, 37, 17, 38, 2, 39, 21, 40, 17, 41, 2, 42, 22, 43, 17, 44, 2, 45, 23, 46, 17, 47, 2, 48, 24, 49, 17, 50, 2, 51, 25, 52, 17, 53, 2, 54, 26, 55, 17, 56, 2, 57, 27, 58, 17, 59, 2, 60, 28, 61, 17, 62, 2, 63, 29, 64, 17, 65, 2, 66, 30, 67, 17, 68, 2, 69, 3, 70, 4, 71, 1, 72, 4, 9, 31, 0, 3, 0, 73, 73, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 74, 9, 75, 32, 0, 3, 0, 73, 76, -1, 10, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 74, 9, 75, 33, 9, 34, 0, 3, 0, 73, 77, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 74, 9, 75, 35, 0, 3, 0, 73, 78, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 74, 9, 75, 36, 0, 0, 0, 80, 79, 37, 1, 6, 38, 0, 0, 0, 80, 81, 37, 2, 6, 39, 82, 40, 0, 0, 0, 83, 83, 41, 0, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
