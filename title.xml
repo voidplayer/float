@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="3" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+<resource_file type="PackedScene" subresource_count="8" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://assets/bionickid.fnt" type="Font"></ext_resource>
 	<ext_resource path="res://assets/title.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/selector.png" type="Texture"></ext_resource>
+	<ext_resource path="res://title.gd" type="Script"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "blink" </string>
 		<real name="length"> 4 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> "TextureFrame:modulate" </node_path>
+		<node_path name="tracks/0/path"> ".:TextureFrame:modulate" </node_path>
 		<int name="tracks/0/interp"> 1 </int>
 		<dictionary name="tracks/0/keys" shared="false">
 			<string> "cont" </string>
@@ -25,10 +28,56 @@
 		</dictionary>
 
 	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "start" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:visibility/opacity" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<real> 0 </real>
+				<real> 1 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 0.5 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "selected" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:rect/pos" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<vector2> 0, 0 </vector2>
+				<vector2> 500, 0 </vector2>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1 </real_array>
+		</dictionary>
+
+	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="32">
+			<string_array  len="60">
 				<string> "title" </string>
 				<string> "Control" </string>
 				<string> "visibility/visible" </string>
@@ -46,6 +95,7 @@
 				<string> "size_flags/horizontal" </string>
 				<string> "size_flags/vertical" </string>
 				<string> "size_flags/stretch_ratio" </string>
+				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "TextureFrame" </string>
 				<string> "margin/top" </string>
@@ -61,15 +111,42 @@
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
 				<string> "autoplay" </string>
+				<string> "enter" </string>
+				<string> "Label" </string>
+				<string> "margin/left" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
+				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
+				<string> "autowrap" </string>
+				<string> "uppercase" </string>
+				<string> "percent_visible" </string>
+				<string> "anims/start" </string>
+				<string> "menu" </string>
+				<string> "1player" </string>
+				<string> "2players" </string>
+				<string> "network" </string>
+				<string> "credits" </string>
+				<string> "selector" </string>
+				<string> "anims/selected" </string>
+				<string> "_on_title_input_event" </string>
+				<string> "input_event" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
-			<int> 0 </int>
+			<int> 1 </int>
 			<string> "node_count" </string>
-			<int> 3 </int>
+			<int> 13 </int>
 			<string> "variants" </string>
-			<array  len="17" shared="false">
+			<array  len="58" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
 				<bool> False </bool>
@@ -77,9 +154,19 @@
 				<real> 601 </real>
 				<node_path> "" </node_path>
 				<int> 2 </int>
+				<resource  resource_type="Script" path="res://title.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
+						<string> "Script" </string>
+						<dictionary  shared="false">
+							<string> "current" </string>
+							<int> 0 </int>
+							<string> "sources" </string>
+							<array  len="1" shared="false">
+								<string> "res://title.gd" </string>
+							</array>
+						</dictionary>
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "pixel_snap" </string>
@@ -174,7 +261,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<real> 600 </real>
 				<resource  resource_type="Texture" path="res://assets/title.png">  </resource>
@@ -185,12 +272,52 @@
 				<resource  resource_type="Animation" path="local://1">  </resource>
 				<array  len="0" shared="false">
 				</array>
+				<string> "blink" </string>
+				<real> 0.377626 </real>
+				<real> 222 </real>
+				<real> 467 </real>
+				<real> 554 </real>
+				<real> 485 </real>
+				<resource  resource_type="Font" path="res://assets/bionickid.fnt">  </resource>
+				<string> "- PRESS START -" </string>
+				<int> 0 </int>
+				<real> -1 </real>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<string> "start" </string>
+				<real> 40 </real>
+				<real> 288 </real>
+				<real> 460 </real>
+				<real> 478 </real>
+				<string> "1   player" </string>
+				<real> 286 </real>
+				<real> 495 </real>
+				<real> 520 </real>
+				<real> 513 </real>
+				<string> "2   players" </string>
+				<real> 287 </real>
+				<real> 526 </real>
+				<real> 482 </real>
+				<real> 544 </real>
+				<string> "network" </string>
+				<real> 290 </real>
+				<real> 559 </real>
+				<real> 459 </real>
+				<real> 577 </real>
+				<string> "credits" </string>
+				<real> 258 </real>
+				<real> 462 </real>
+				<real> 298 </real>
+				<real> 502 </real>
+				<real> 18 </real>
+				<real> 15 </real>
+				<resource  resource_type="Texture" path="res://assets/selector.png">  </resource>
+				<resource  resource_type="Animation" path="local://3">  </resource>
 				<string> "" </string>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="107"> 				-1, -1, 1, 0, -1, 16, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 5, 10, 5, 11, 5, 12, 2, 13, 0, 14, 6, 15, 6, 16, 1, 17, 7, 0, 0, 0, 18, 18, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 19, 1, 6, 3, 7, 8, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 15, 6, 16, 1, 20, 9, 21, 10, 22, 0, 0, 0, 0, 23, 23, -1, 8, 24, 11, 25, 12, 26, 13, 27, 14, 28, 0, 29, 1, 30, 15, 31, 16, 0 </int_array>
+			<int_array  len="611"> 				-1, -1, 1, 0, -1, 17, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 5, 10, 5, 11, 5, 12, 2, 13, 0, 14, 6, 15, 6, 16, 1, 17, 7, 18, 8, 0, 0, 0, 19, 19, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 20, 1, 6, 3, 7, 9, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 15, 6, 16, 1, 21, 10, 22, 11, 23, 0, 0, 1, 0, 24, 24, -1, 8, 25, 12, 26, 13, 27, 14, 28, 15, 29, 0, 30, 1, 31, 16, 32, 17, 0, 0, 0, 34, 33, -1, 30, 2, 0, 3, 18, 4, 1, 5, 2, 35, 19, 20, 20, 6, 21, 7, 22, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 16, 1, 36, 23, 37, 13, 38, 1, 39, 1, 40, 1, 41, 13, 42, 2, 43, 2, 44, 24, 45, 25, 46, 25, 47, 2, 48, 2, 49, 26, 0, 3, 0, 24, 24, -1, 8, 25, 12, 26, 13, 27, 14, 50, 27, 29, 0, 30, 1, 31, 16, 32, 28, 0, 0, 0, 1, 51, -1, 15, 2, 2, 3, 1, 4, 1, 5, 2, 6, 29, 7, 29, 8, 5, 9, 5, 10, 5, 11, 5, 12, 2, 13, 0, 14, 6, 15, 6, 16, 1, 0, 5, 0, 34, 52, -1, 30, 2, 0, 3, 1, 4, 1, 5, 2, 35, 30, 20, 31, 6, 22, 7, 32, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 16, 1, 36, 23, 37, 13, 38, 1, 39, 1, 40, 1, 41, 13, 42, 2, 43, 2, 44, 33, 45, 25, 46, 25, 47, 2, 48, 2, 49, 26, 0, 5, 0, 34, 53, -1, 30, 2, 0, 3, 1, 4, 1, 5, 2, 35, 34, 20, 35, 6, 36, 7, 37, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 16, 1, 36, 23, 37, 13, 38, 1, 39, 1, 40, 1, 41, 13, 42, 2, 43, 2, 44, 38, 45, 25, 46, 25, 47, 2, 48, 2, 49, 26, 0, 5, 0, 34, 54, -1, 30, 2, 0, 3, 1, 4, 1, 5, 2, 35, 39, 20, 40, 6, 41, 7, 42, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 16, 1, 36, 23, 37, 13, 38, 1, 39, 1, 40, 1, 41, 13, 42, 2, 43, 2, 44, 43, 45, 25, 46, 25, 47, 2, 48, 2, 49, 26, 0, 5, 0, 34, 55, -1, 30, 2, 0, 3, 1, 4, 1, 5, 2, 35, 44, 20, 45, 6, 46, 7, 47, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 16, 1, 36, 23, 37, 13, 38, 1, 39, 1, 40, 1, 41, 13, 42, 2, 43, 2, 44, 48, 45, 25, 46, 25, 47, 2, 48, 2, 49, 26, 0, 5, 0, 1, 56, -1, 17, 2, 0, 3, 1, 4, 1, 5, 2, 35, 49, 20, 50, 6, 51, 7, 52, 8, 5, 9, 5, 10, 5, 11, 5, 12, 2, 13, 0, 14, 6, 15, 6, 16, 1, 0, 10, 0, 19, 19, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 53, 7, 54, 8, 5, 9, 5, 10, 5, 11, 5, 12, 0, 13, 0, 14, 6, 15, 6, 16, 1, 21, 55, 22, 11, 23, 2, 0, 11, 0, 24, 24, -1, 8, 25, 12, 26, 13, 27, 14, 57, 56, 29, 0, 30, 1, 31, 16, 32, 57, 0 </int_array>
 			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<int_array  len="6"> 				0, 0, 59, 58, 2, 0 </int_array>
 		</dictionary>
 
 	</main_resource>
