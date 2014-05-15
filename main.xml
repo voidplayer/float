@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://tileset.xml" type="TileSet"></ext_resource>
 	<ext_resource path="res://main.gd" type="Script"></ext_resource>
 	<ext_resource path="res://tank.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://tileset.xml" type="TileSet"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>

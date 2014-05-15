@@ -47,26 +47,25 @@ func _process(delta):
 	if (up):
 		motion+=Vector2(-sin(angle),-cos(angle))
 		set_anim("rolling")
-		var ti = track.instance()
-		ti.set_pos(get_pos())
-		ti.set_rot(get_rot())
-		get_parent().add_child(ti)
-		raise()
+		set_tracks()
 		
 	elif (down):
 		motion+=Vector2(sin(angle),cos(angle))
 		set_anim("rolling", true)
-		#animation.play("rolling", -1, -1, true)
+		set_tracks()
+
 	else:
 		set_anim("idle")
 	
 	if (rleft):
 		angle += ROTATION_SPEED * delta
 		set_rot(angle)
+		set_tracks()
 		
 	if (rright):
 		angle -= ROTATION_SPEED * delta
 		set_rot(angle)
+		set_tracks()
 
 	if (shoot):
 		shooting = true
@@ -79,12 +78,21 @@ func _process(delta):
 	motion = motion.normalized() * MOTION_SPEED * delta
 	move(motion)
 	
-	
+func set_tracks():
+	var ti = track.instance()
+	ti.set_pos(get_pos())
+	ti.set_rot(get_rot())
+	get_parent().add_child(ti)
+	raise()
+
 
 func set_anim(a, reverse = false):
 	if anim != a:
 		anim = a
-		animation.play(anim)
+		if !reverse:
+			animation.play(anim)
+		else:
+			animation.play(anim, -1, -1, true)
 
 
 func _ready():
