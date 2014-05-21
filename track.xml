@@ -16,7 +16,7 @@
 			<real_array  len="2"> 				1, 22.6274 </real_array>
 			<string> "values" </string>
 			<array  len="2" shared="false">
-				<real> 0.5 </real>
+				<real> 0.2 </real>
 				<real> 0 </real>
 			</array>
 			<string> "times" </string>
@@ -99,10 +99,11 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 0 </int>
+							<int> 1 </int>
 							<string> "sources" </string>
-							<array  len="1" shared="false">
+							<array  len="2" shared="false">
 								<string> "res://tank.gd" </string>
+								<string> "res://bullet.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -111,8 +112,12 @@
 							<bool> False </bool>
 							<string> "zoom" </string>
 							<real> 6.33797 </real>
+							<string> "use_snap" </string>
+							<bool> False </bool>
 							<string> "ofs" </string>
 							<vector2> -40.1336, -29.0461 </vector2>
+							<string> "snap" </string>
+							<int> 10 </int>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">

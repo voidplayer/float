@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://bullet.gd" type="Script"></ext_resource>
 	<ext_resource path="res://assets/bullet.png" type="Texture"></ext_resource>
+	<ext_resource path="res://bullet.gd" type="Script"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			2.97157, 3.83116, -1.9935, 3.83116, -1.91075, -3.89228, 2.94398, -3.83711 </vector2_array>
+		<vector2_array name="points" len="4"> 			-1.98597, 3.62683, -1.76083, -3.91552, 3.07979, -3.878, 2.92969, 3.73941 </vector2_array>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="41">
+			<string_array  len="42">
 				<string> "bullet" </string>
 				<string> "KinematicBody2D" </string>
 				<string> "visibility/visible" </string>
@@ -24,6 +24,7 @@
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
+				<string> "layers" </string>
 				<string> "collide_with/static" </string>
 				<string> "collide_with/kinematic" </string>
 				<string> "collide_with/rigid" </string>
@@ -60,7 +61,7 @@
 			<string> "node_count" </string>
 			<int> 4 </int>
 			<string> "variants" </string>
-			<array  len="17" shared="false">
+			<array  len="18" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
 				<bool> False </bool>
@@ -78,7 +79,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 0 </int>
+							<int> 1 </int>
 							<string> "sources" </string>
 							<array  len="2" shared="false">
 								<string> "res://tank.gd" </string>
@@ -90,9 +91,13 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 36.2533 </real>
+							<real> 26.649508 </real>
+							<string> "use_snap" </string>
+							<bool> False </bool>
 							<string> "ofs" </string>
 							<vector2> -9.30318, -15.6981 </vector2>
+							<string> "snap" </string>
+							<int> 10 </int>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -179,18 +184,19 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://assets/bullet.png">  </resource>
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<vector2_array  len="4"> 					-1.91075, -3.89228, 2.94398, -3.83711, 2.97157, 3.83116, -1.9935, 3.83116 </vector2_array>
+				<vector2_array  len="4"> 					-1.76083, -3.91552, 3.07979, -3.878, 2.92969, 3.73941, -1.98597, 3.62683 </vector2_array>
+				<real> 3 </real>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="124"> 				-1, -1, 1, 0, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 13, 2, 14, 2, 15, 0, 16, 2, 17, 9, 18, 10, 19, 11, 0, 0, 0, 20, 20, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 21, 12, 22, 0, 23, 3, 24, 2, 25, 2, 26, 6, 27, 6, 28, 13, 29, 14, 30, 2, 31, 15, 0, 0, 0, 32, 32, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 33, 13, 34, 16, 0, 0, 0, 35, 35, -1, 3, 36, 1, 37, 0, 38, 0, 0 </int_array>
+			<int_array  len="126"> 				-1, -1, 1, 0, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 13, 6, 14, 0, 15, 0, 16, 0, 17, 0, 18, 9, 19, 10, 20, 11, 0, 0, 0, 21, 21, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 22, 12, 23, 0, 24, 3, 25, 2, 26, 2, 27, 6, 28, 6, 29, 13, 30, 14, 31, 2, 32, 15, 0, 0, 0, 33, 33, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 34, 13, 35, 16, 0, 0, 0, 36, 36, -1, 3, 37, 17, 38, 0, 39, 2, 0 </int_array>
 			<string> "conns" </string>
-			<int_array  len="6"> 				3, 0, 40, 39, 2, 0 </int_array>
+			<int_array  len="6"> 				3, 0, 41, 40, 2, 0 </int_array>
 		</dictionary>
 
 	</main_resource>

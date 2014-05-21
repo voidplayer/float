@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="6" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+<resource_file type="PackedScene" subresource_count="7" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://tank.gd" type="Script"></ext_resource>
 	<ext_resource path="res://assets/tank1.png" type="Texture"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<vector2_array name="points" len="4"> 			-10.8232, -13.4493, 12.6859, -13.4493, 12.3704, 14.1621, -10.6654, 14.0043 </vector2_array>
+		<vector2_array name="points" len="4"> 			-10.0343, 13.3732, -9.71871, -12.0292, 12.2126, -12.9759, 12.2126, 13.8465 </vector2_array>
 
 	</resource>
 	<resource type="Animation" path="local://2">
@@ -59,10 +59,34 @@
 		</dictionary>
 
 	</resource>
+	<resource type="Animation" path="local://4">
+		<string name="resource/name"> "hit" </string>
+		<real name="length"> 2 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:visibility/opacity" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="3"> 				1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="3" shared="false">
+				<real> 1 </real>
+				<real> 0 </real>
+				<real> 1 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="3"> 				0, 1, 2 </real_array>
+		</dictionary>
+
+	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="61">
+			<string_array  len="51">
 				<string> "tank" </string>
 				<string> "KinematicBody2D" </string>
 				<string> "visibility/visible" </string>
@@ -76,6 +100,7 @@
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
 				<string> "shapes/0/trigger" </string>
+				<string> "layers" </string>
 				<string> "collide_with/static" </string>
 				<string> "collide_with/kinematic" </string>
 				<string> "collide_with/rigid" </string>
@@ -103,6 +128,7 @@
 				<string> "root/root" </string>
 				<string> "anims/idle" </string>
 				<string> "anims/rolling" </string>
+				<string> "anims/hit" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
@@ -112,27 +138,15 @@
 				<string> "CollisionPolygon2D" </string>
 				<string> "build_mode" </string>
 				<string> "polygon" </string>
-				<string> "Control" </string>
-				<string> "margin/right" </string>
-				<string> "margin/bottom" </string>
-				<string> "focus_neighbour/left" </string>
-				<string> "focus_neighbour/top" </string>
-				<string> "focus_neighbour/right" </string>
-				<string> "focus_neighbour/bottom" </string>
-				<string> "focus/ignore_mouse" </string>
-				<string> "focus/stop_mouse" </string>
-				<string> "size_flags/horizontal" </string>
-				<string> "size_flags/vertical" </string>
-				<string> "size_flags/stretch_ratio" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 6 </int>
+			<int> 5 </int>
 			<string> "variants" </string>
-			<array  len="27" shared="false">
+			<array  len="26" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
 				<bool> False </bool>
@@ -141,7 +155,7 @@
 				<vector2> 1, 1 </vector2>
 				<int> 1 </int>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 1, -0, 0, 1, 0.157776, 0 </matrix32>
 				<resource  resource_type="Script" path="res://tank.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
@@ -151,9 +165,10 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="2" shared="false">
+							<array  len="3" shared="false">
 								<string> "res://tank.gd" </string>
 								<string> "res://bullet.gd" </string>
+								<string> "res://global.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -162,8 +177,12 @@
 							<bool> False </bool>
 							<string> "zoom" </string>
 							<real> 6.33797 </real>
+							<string> "use_snap" </string>
+							<bool> False </bool>
 							<string> "ofs" </string>
 							<vector2> -84.1905, -70.092 </vector2>
+							<string> "snap" </string>
+							<int> 10 </int>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -261,17 +280,16 @@
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://2">  </resource>
 				<resource  resource_type="Animation" path="local://3">  </resource>
+				<resource  resource_type="Animation" path="local://4">  </resource>
 				<array  len="0" shared="false">
 				</array>
 				<string> "idle" </string>
-				<vector2> -13.8955, -16.1044 </vector2>
-				<vector2_array  len="4"> 					-10.8232, -13.4493, 12.6859, -13.4493, 12.3704, 14.1621, -10.6654, 14.0043 </vector2_array>
-				<real> 40 </real>
-				<node_path> "" </node_path>
-				<int> 2 </int>
+				<vector2> -14.2111, -21.4689 </vector2>
+				<vector2> 0.157776, 0 </vector2>
+				<vector2_array  len="4"> 					-9.71871, -12.0292, -10.0343, 13.3732, 12.2126, 13.8465, 12.2126, -12.9759 </vector2_array>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="196"> 				-1, -1, 1, 0, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 13, 0, 14, 2, 15, 0, 16, 0, 17, 1, 18, 9, 19, 10, 20, 11, 0, 0, 0, 21, 21, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 22, 12, 23, 0, 24, 3, 25, 2, 26, 2, 27, 6, 28, 13, 29, 14, 30, 15, 31, 2, 32, 16, 0, 1, 0, 34, 33, -1, 9, 35, 6, 36, 4, 37, 17, 38, 18, 39, 19, 40, 0, 41, 1, 42, 20, 43, 21, 0, 0, 0, 45, 44, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 22, 7, 4, 8, 5, 0, 0, 0, 46, 46, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 47, 14, 48, 23, 0, 0, 0, 49, 49, -1, 15, 2, 0, 3, 1, 4, 1, 5, 2, 50, 24, 51, 24, 52, 25, 53, 25, 54, 25, 55, 25, 56, 2, 57, 0, 58, 26, 59, 26, 60, 1, 0 </int_array>
+			<int_array  len="163"> 				-1, -1, 1, 0, -1, 20, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 2, 13, 6, 14, 0, 15, 0, 16, 0, 17, 0, 18, 1, 19, 9, 20, 10, 21, 11, 0, 0, 0, 22, 22, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 23, 12, 24, 0, 25, 3, 26, 2, 27, 2, 28, 6, 29, 13, 30, 14, 31, 15, 32, 2, 33, 16, 0, 1, 0, 35, 34, -1, 10, 36, 6, 37, 4, 38, 17, 39, 18, 40, 19, 41, 20, 42, 0, 43, 1, 44, 21, 45, 22, 0, 0, 0, 47, 46, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 23, 7, 4, 8, 5, 0, 0, 0, 48, 48, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 24, 7, 4, 8, 5, 49, 14, 50, 25, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>
