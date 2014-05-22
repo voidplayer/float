@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="9" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://assets/bionickid.fnt" type="Font"></ext_resource>
+	<ext_resource path="res://title.gd" type="Script"></ext_resource>
 	<ext_resource path="res://assets/selector.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/title.png" type="Texture"></ext_resource>
-	<ext_resource path="res://title.gd" type="Script"></ext_resource>
+	<ext_resource path="res://assets/bionickid.fnt" type="Font"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "blink" </string>
 		<real name="length"> 4 </real>
@@ -206,8 +206,11 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="1" shared="false">
+							<array  len="4" shared="false">
 								<string> "res://title.gd" </string>
+								<string> "res://global.gd" </string>
+								<string> "res://hud.gd" </string>
+								<string> "res://select_color.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>

@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 export var tankid = "tank1"
+export var tankcolor = "green"
 
 const MOTION_SPEED=160
 const ROTATION_SPEED=4
@@ -114,11 +115,11 @@ func set_anim(a, reverse = false):
 		if !reverse:
 			#print(tankid, " ", anim)
 			if anim == "hit":
-				animation.queue(anim)
+				animation.queue(tankcolor + " " + anim)
 			else:
-				animation.play(anim)
+				animation.play(tankcolor + " " + anim)
 		else:
-			animation.play(anim, -1, -1, true)
+			animation.play(tankcolor + " " + anim, -1, -1, true)
 
 func hit():
 	#set_anim("hit")

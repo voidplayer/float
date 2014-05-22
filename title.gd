@@ -14,12 +14,15 @@ var credits = [ "credits", "back" ]
 
 var selector = 1
 var selector_tank
-var selector_anim 
+var selector_anim
+
+var global = null
 
 func _ready():
 	set_process_input(true)
 	selector_tank = get_node("selector")
 	selector_anim = selector_tank.get_node("Sprite/anim")
+	global = get_node("/root/global")
 	#action_menu(menu, "enter_menu")
 
 func action_menu(action):
@@ -70,9 +73,11 @@ func _input(ev):
 				action_menu("up")
 			elif ev.is_action("ui_accept"):
 				if menu[selector] == menu[1]:
-					get_node("/root/global").goto_scene("res://select_color.xml")
+					global.goto_scene("res://select_color.xml")
+					global.status = global.SELECT1P
 				elif menu[selector] == menu[2]:
-					get_node("/root/global").goto_scene("res://select_color.xml")
+					global.goto_scene("res://select_color.xml")
+					global.status = global.SELECT2P
 				elif menu[selector] == menu[3]:
 					get_node("menu").hide()
 					get_node("network").show()

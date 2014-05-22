@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="20" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+<resource_file type="PackedScene" subresource_count="19" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://assets/map1bg.png" type="Texture"></ext_resource>
+	<ext_resource path="res://hud.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://assets/map1l1.png" type="Texture"></ext_resource>
 	<ext_resource path="res://map1.gd" type="Script"></ext_resource>
-	<ext_resource path="res://tank.xml" type="PackedScene"></ext_resource>
-	<ext_resource path="res://hud.xml" type="PackedScene"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			873.344, 118.484, 894.521, 135.589, 847.28, 210.523, 860.312, 129.073 </vector2_array>
@@ -78,7 +77,7 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="87">
+			<string_array  len="92">
 				<string> "map1" </string>
 				<string> "Node2D" </string>
 				<string> "visibility/visible" </string>
@@ -160,21 +159,26 @@
 				<string> "CollisionPolygon2D 2" </string>
 				<string> "CollisionPolygon2D 3" </string>
 				<string> "CollisionPolygon2D 4" </string>
-				<string> "tank" </string>
-				<string> "KinematicBody2D" </string>
-				<string> "tank 2" </string>
-				<string> "tankid" </string>
 				<string> "scoreboard" </string>
 				<string> "CanvasLayer" </string>
+				<string> "spawn1" </string>
+				<string> "Position2D" </string>
+				<string> "spawn2" </string>
+				<string> "spawn3" </string>
+				<string> "spawn4" </string>
+				<string> "spawn5" </string>
+				<string> "spawn6" </string>
+				<string> "spawn7" </string>
+				<string> "spawn8" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 11 </int>
+			<int> 17 </int>
 			<string> "variants" </string>
-			<array  len="43" shared="false">
+			<array  len="47" shared="false">
 				<bool> True </bool>
 				<real> 1 </real>
 				<bool> False </bool>
@@ -294,7 +298,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://assets/map1bg.png">  </resource>
 				<int> 1 </int>
@@ -337,14 +341,18 @@
 				</dictionary>
 				<vector2_array  len="13"> 					508.445, 463.835, 523.921, 501.302, 554.057, 542.027, 563.017, 567.277, 551.614, 606.373, 517.405, 638.139, 455.502, 677.235, 387.084, 686.195, 343.1, 678.865, 339.842, 648.728, 335.77, 625.922, 332.512, 519.221, 420.478, 478.496 </vector2_array>
 				<vector2_array  len="9"> 					789.545, 680.875, 857.202, 676.085, 875.763, 803.616, 870.375, 926.357, 857.801, 938.332, 779.367, 933.542, 776.972, 821.578, 784.156, 744.94, 783.558, 693.448 </vector2_array>
-				<resource  resource_type="PackedScene" path="res://tank.xml">  </resource>
-				<vector2> 307, 874 </vector2>
-				<vector2> 304, 708 </vector2>
-				<string> "tank2" </string>
 				<resource  resource_type="PackedScene" path="res://hud.xml">  </resource>
+				<vector2> 263, 848 </vector2>
+				<vector2> 262, 706 </vector2>
+				<vector2> 235, 480 </vector2>
+				<vector2> 315, 361 </vector2>
+				<vector2> 411, 284 </vector2>
+				<vector2> 477, 382 </vector2>
+				<vector2> 658, 476 </vector2>
+				<vector2> 860, 471 </vector2>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="361"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 13, 8, 14, 2, 15, 3, 16, 2, 17, 2, 18, 9, 19, 9, 20, 10, 21, 11, 22, 2, 23, 12, 10, 13, 0, 0, 0, 12, 24, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 14, 7, 4, 8, 5, 13, 15, 14, 2, 15, 3, 16, 2, 17, 2, 18, 9, 19, 9, 20, 10, 21, 11, 22, 2, 23, 12, 0, 2, 0, 26, 25, -1, 56, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 27, 16, 28, 17, 29, 18, 30, 2, 31, 19, 32, 18, 33, 2, 34, 20, 35, 18, 36, 2, 37, 21, 38, 18, 39, 2, 40, 22, 41, 18, 42, 2, 43, 23, 44, 18, 45, 2, 46, 24, 47, 18, 48, 2, 49, 25, 50, 18, 51, 2, 52, 26, 53, 18, 54, 2, 55, 27, 56, 18, 57, 2, 58, 28, 59, 18, 60, 2, 61, 29, 62, 18, 63, 2, 64, 30, 65, 18, 66, 2, 67, 31, 68, 18, 69, 2, 70, 9, 71, 3, 72, 4, 73, 1, 74, 4, 10, 32, 0, 3, 0, 75, 75, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 33, 0, 3, 0, 75, 78, -1, 10, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 34, 10, 35, 0, 3, 0, 75, 79, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 36, 0, 3, 0, 75, 80, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 37, 0, 0, 0, 82, 81, 38, 1, 6, 39, 0, 0, 0, 82, 83, 38, 2, 6, 40, 84, 41, 0, 0, 0, 86, 85, 42, 0, 0 </int_array>
+			<int_array  len="509"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, -1, 19, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 13, 8, 14, 2, 15, 3, 16, 2, 17, 2, 18, 9, 19, 9, 20, 10, 21, 11, 22, 2, 23, 12, 10, 13, 0, 0, 0, 12, 24, -1, 18, 2, 0, 3, 1, 4, 1, 5, 2, 6, 14, 7, 4, 8, 5, 13, 15, 14, 2, 15, 3, 16, 2, 17, 2, 18, 9, 19, 9, 20, 10, 21, 11, 22, 2, 23, 12, 0, 2, 0, 26, 25, -1, 56, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 27, 16, 28, 17, 29, 18, 30, 2, 31, 19, 32, 18, 33, 2, 34, 20, 35, 18, 36, 2, 37, 21, 38, 18, 39, 2, 40, 22, 41, 18, 42, 2, 43, 23, 44, 18, 45, 2, 46, 24, 47, 18, 48, 2, 49, 25, 50, 18, 51, 2, 52, 26, 53, 18, 54, 2, 55, 27, 56, 18, 57, 2, 58, 28, 59, 18, 60, 2, 61, 29, 62, 18, 63, 2, 64, 30, 65, 18, 66, 2, 67, 31, 68, 18, 69, 2, 70, 9, 71, 3, 72, 4, 73, 1, 74, 4, 10, 32, 0, 3, 0, 75, 75, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 33, 0, 3, 0, 75, 78, -1, 10, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 34, 10, 35, 0, 3, 0, 75, 79, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 36, 0, 3, 0, 75, 80, -1, 9, 2, 0, 3, 1, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 76, 10, 77, 37, 0, 0, 0, 82, 81, 38, 0, 0, 0, 0, 84, 83, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 39, 7, 4, 8, 5, 0, 0, 0, 84, 85, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 40, 7, 4, 8, 5, 0, 0, 0, 84, 86, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 41, 7, 4, 8, 5, 0, 0, 0, 84, 87, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 42, 7, 4, 8, 5, 0, 0, 0, 84, 88, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 43, 7, 4, 8, 5, 0, 0, 0, 84, 89, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 44, 7, 4, 8, 5, 0, 0, 0, 84, 90, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 45, 7, 4, 8, 5, 0, 0, 0, 84, 91, -1, 7, 2, 0, 3, 1, 4, 1, 5, 2, 6, 46, 7, 4, 8, 5, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>
