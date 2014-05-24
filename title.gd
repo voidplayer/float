@@ -73,11 +73,11 @@ func _input(ev):
 				action_menu("up")
 			elif ev.is_action("ui_accept"):
 				if menu[selector] == menu[1]:
-					global.goto_scene("res://select_color.xml")
 					global.status = global.SELECT1P
-				elif menu[selector] == menu[2]:
 					global.goto_scene("res://select_color.xml")
+				elif menu[selector] == menu[2]:
 					global.status = global.SELECT2P
+					global.goto_scene("res://select_color.xml")
 				elif menu[selector] == menu[3]:
 					get_node("menu").hide()
 					get_node("network").show()

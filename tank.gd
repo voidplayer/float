@@ -43,7 +43,7 @@ func _fixed_process(delta):
 		get_parent().print_tree()
 
 	if Input.is_action_pressed("ui_cancel"):
-		get_node("/root/global").goto_scene("res://title.xml")
+		global.goto_scene("res://title.xml")
 
 	# key definition
 	up = Input.is_action_pressed(tankid + "up")
