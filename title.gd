@@ -23,6 +23,7 @@ func _ready():
 	selector_tank = get_node("selector")
 	selector_anim = selector_tank.get_node("Sprite/anim")
 	global = get_node("/root/global")
+	global.reset()
 	#action_menu(menu, "enter_menu")
 
 func action_menu(action):

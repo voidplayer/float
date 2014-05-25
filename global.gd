@@ -11,6 +11,17 @@ var current_scene = null
 
 var server = null
 
+var players = [] #[ "p1","p2",...]
+var colors = {} #{ "p1":"green", "p2":"red"
+
+func add_player(pid, color):
+	players.push_back(pid)
+	colors[pid] = color
+
+func reset():
+	players = []
+	colors = {}
+
 func _process(delta):
 	if server:
 		onServerUpdate()

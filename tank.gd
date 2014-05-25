@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var tankid = "tank1"
+export var tankid = "p1"
 export var tankcolor = "green"
 
 const MOTION_SPEED=160
@@ -91,7 +91,7 @@ func shoot():
 		can_shoot = CAN_SHOOT
 		var bi = bullet.instance()
 		bi.set_rot(angle)
-		var pos = get_pos() + get_node("bulletPosition").get_pos()* Vector2(sin(angle),cos(angle))
+		var pos = get_pos() + get_node("Sprite/bulletPosition").get_pos()* Vector2(sin(angle),cos(angle))
 		bi.set_pos(pos)
 		
 		#dont collide with own tank
@@ -130,9 +130,10 @@ func hit():
 	update_scoreboard()
 
 func update_scoreboard():
-	scoreboard.get_node(tankid + "/lives").set_text(str(lives))
-	
+	scoreboard.set_lives(tankid, lives)
+
 func _ready():
+	print("tank ready")
 	bullet = preload("res://bullet.xml")
 	track = preload("res://track.xml")
 	global = get_node("/root/global")
@@ -141,6 +142,7 @@ func _ready():
 	set_anim("idle")
 	
 	scoreboard = get_parent().get_node("scoreboard")
+	assert (scoreboard)
 	update_scoreboard()
 
 	set_fixed_process(true)

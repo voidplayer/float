@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://tank_color_animation.xml" type="PackedScene"></ext_resource>
 	<ext_resource path="res://assets/bionickid.fnt" type="Font"></ext_resource>
+	<ext_resource path="res://hud.gd" type="Script"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "victory" </string>
 		<real name="length"> 1 </real>
@@ -28,16 +28,16 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="57">
+			<string_array  len="52">
 				<string> "scoreboard" </string>
 				<string> "CanvasLayer" </string>
 				<string> "layer" </string>
 				<string> "offset" </string>
 				<string> "rotation" </string>
 				<string> "scale" </string>
+				<string> "script/script" </string>
 				<string> "__meta__" </string>
-				<string> "tank1" </string>
-				<string> "Control" </string>
+				<string> "HBoxContainer" </string>
 				<string> "visibility/visible" </string>
 				<string> "visibility/opacity" </string>
 				<string> "visibility/self_opacity" </string>
@@ -53,9 +53,7 @@
 				<string> "size_flags/horizontal" </string>
 				<string> "size_flags/vertical" </string>
 				<string> "size_flags/stretch_ratio" </string>
-				<string> "Node2D" </string>
-				<string> "transform/pos" </string>
-				<string> "x" </string>
+				<string> "victory" </string>
 				<string> "Label" </string>
 				<string> "margin/left" </string>
 				<string> "margin/top" </string>
@@ -73,9 +71,6 @@
 				<string> "autowrap" </string>
 				<string> "uppercase" </string>
 				<string> "percent_visible" </string>
-				<string> "lives" </string>
-				<string> "tank2" </string>
-				<string> "victory" </string>
 				<string> "anim" </string>
 				<string> "AnimationPlayer" </string>
 				<string> "playback/process_mode" </string>
@@ -92,26 +87,29 @@
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 11 </int>
+			<int> 4 </int>
 			<string> "variants" </string>
-			<array  len="39" shared="false">
+			<array  len="26" shared="false">
 				<int> 1 </int>
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
+				<resource  resource_type="Script" path="res://hud.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="4" shared="false">
+							<array  len="6" shared="false">
 								<string> "res://tank.gd" </string>
 								<string> "res://main.gd" </string>
 								<string> "res://title.gd" </string>
 								<string> "res://global.gd" </string>
+								<string> "res://hud.gd" </string>
+								<string> "res://select_color.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -217,33 +215,22 @@
 				<bool> True </bool>
 				<real> 1 </real>
 				<bool> False </bool>
-				<real> 40 </real>
+				<real> 1283 </real>
+				<real> 174 </real>
 				<node_path> "" </node_path>
 				<int> 2 </int>
-				<resource  resource_type="PackedScene" path="res://tank_color_animation.xml">  </resource>
-				<vector2> 125.154, 99.3073 </vector2>
-				<real> 205 </real>
-				<real> 91 </real>
-				<real> 246 </real>
-				<real> 109 </real>
-				<resource  resource_type="Font" path="res://assets/bionickid.fnt">  </resource>
-				<string> "x" </string>
-				<int> 0 </int>
-				<real> -1 </real>
-				<real> 265 </real>
-				<real> 90 </real>
-				<real> 348 </real>
-				<real> 161 </real>
-				<string> "3" </string>
-				<real> 285 </real>
-				<real> -2 </real>
-				<real> 325 </real>
-				<real> 38 </real>
 				<real> 505 </real>
 				<real> -85 </real>
 				<real> 719 </real>
 				<real> -67 </real>
+				<resource  resource_type="Font" path="res://assets/bionickid.fnt">  </resource>
 				<string> "Tank WINS" </string>
+				<int> 0 </int>
+				<real> -1 </real>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://1">  </resource>
 				<array  len="0" shared="false">
@@ -251,7 +238,7 @@
 				<string> "victory" </string>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="471"> 				-1, -1, 1, 0, -1, 5, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 0, 0, 0, 8, 7, -1, 15, 9, 5, 10, 6, 11, 6, 12, 7, 13, 8, 14, 8, 15, 9, 16, 9, 17, 9, 18, 9, 19, 7, 20, 5, 21, 10, 22, 10, 23, 6, 0, 1, 0, 24, 8, 11, 1, 25, 12, 0, 1, 0, 27, 26, -1, 30, 9, 5, 10, 6, 11, 6, 12, 7, 28, 13, 29, 14, 13, 15, 14, 16, 15, 9, 16, 9, 17, 9, 18, 9, 19, 5, 20, 5, 21, 10, 23, 6, 30, 17, 31, 2, 32, 6, 33, 6, 34, 6, 35, 2, 36, 7, 37, 7, 38, 18, 39, 19, 40, 19, 41, 7, 42, 7, 43, 20, 0, 1, 0, 27, 44, -1, 30, 9, 5, 10, 6, 11, 6, 12, 7, 28, 21, 29, 22, 13, 23, 14, 24, 15, 9, 16, 9, 17, 9, 18, 9, 19, 5, 20, 5, 21, 0, 23, 6, 30, 17, 31, 2, 32, 6, 33, 6, 34, 6, 35, 2, 36, 7, 37, 7, 38, 25, 39, 19, 40, 19, 41, 7, 42, 7, 43, 20, 0, 0, 0, 8, 45, -1, 17, 9, 5, 10, 6, 11, 6, 12, 7, 28, 26, 29, 27, 13, 28, 14, 29, 15, 9, 16, 9, 17, 9, 18, 9, 19, 7, 20, 5, 21, 10, 22, 10, 23, 6, 0, 5, 0, 24, 8, 11, 1, 25, 12, 0, 5, 0, 27, 26, -1, 30, 9, 5, 10, 6, 11, 6, 12, 7, 28, 13, 29, 14, 13, 15, 14, 16, 15, 9, 16, 9, 17, 9, 18, 9, 19, 5, 20, 5, 21, 10, 23, 6, 30, 17, 31, 2, 32, 6, 33, 6, 34, 6, 35, 2, 36, 7, 37, 7, 38, 18, 39, 19, 40, 19, 41, 7, 42, 7, 43, 20, 0, 5, 0, 27, 44, -1, 30, 9, 5, 10, 6, 11, 6, 12, 7, 28, 21, 29, 22, 13, 23, 14, 24, 15, 9, 16, 9, 17, 9, 18, 9, 19, 5, 20, 5, 21, 0, 23, 6, 30, 17, 31, 2, 32, 6, 33, 6, 34, 6, 35, 2, 36, 7, 37, 7, 38, 25, 39, 19, 40, 19, 41, 7, 42, 7, 43, 20, 0, 0, 0, 27, 46, -1, 30, 9, 5, 10, 6, 11, 6, 12, 7, 28, 30, 29, 31, 13, 32, 14, 33, 15, 9, 16, 9, 17, 9, 18, 9, 19, 5, 20, 5, 21, 10, 23, 6, 30, 17, 31, 2, 32, 6, 33, 6, 34, 6, 35, 2, 36, 7, 37, 7, 38, 34, 39, 19, 40, 19, 41, 7, 42, 7, 43, 20, 0, 9, 0, 48, 47, -1, 8, 49, 0, 50, 2, 51, 35, 52, 36, 53, 5, 54, 6, 55, 37, 56, 38, 0 </int_array>
+			<int_array  len="148"> 				-1, -1, 1, 0, -1, 6, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 7, 5, 0, 0, 0, 8, 8, -1, 15, 9, 6, 10, 7, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 11, 17, 11, 18, 11, 19, 8, 20, 8, 21, 12, 22, 12, 23, 7, 0, 0, 0, 25, 24, -1, 31, 9, 6, 10, 7, 11, 7, 12, 8, 26, 13, 27, 14, 13, 15, 14, 16, 15, 11, 16, 11, 17, 11, 18, 11, 19, 6, 20, 6, 21, 12, 23, 7, 28, 17, 29, 2, 30, 7, 31, 7, 32, 7, 33, 2, 34, 8, 35, 8, 36, 18, 37, 19, 38, 19, 39, 8, 40, 8, 41, 20, 7, 21, 0, 2, 0, 43, 42, -1, 8, 44, 0, 45, 2, 46, 22, 47, 23, 48, 6, 49, 7, 50, 24, 51, 25, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

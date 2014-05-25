@@ -58,13 +58,19 @@ func _input(ev):
 	if ev.is_action("ui_cancel"):
 		global.goto_scene("res://title.xml")
 
-	process_input(ev, "p1")
-	if _2players:
+	if selected["p1"] == "":
+		process_input(ev, "p1")
+	if _2players and selected["p2"] == "":
 		process_input(ev, "p2")
 
-	if selected["p1"] != "" and (!_2players or selected["p2"] != ""):
+	# global.status != global.PLAYING is to avoid a race condition because of buffer (or something) 
+	if selected["p1"] != "" and (!_2players or selected["p2"] != "") and global.status != global.PLAYING:
 		global.status = global.PLAYING
+		global.add_player("p1", selected["p1"])
+		if selected["p2"] != "":
+			global.add_player("p2", selected["p2"])
 		global.goto_scene("res://map1.xml")
+
 
 func process_input(ev, player):
 
@@ -84,6 +90,7 @@ func process_input(ev, player):
 			current[player] -= 1
 		elif shoot:
 			selected[player] = colors[current[player]]
+			get_node(player+"/anim").play("selected")
 
 		if current[player] > colors.size() - 1:
 			current[player] = current[player] % (colors.size())
