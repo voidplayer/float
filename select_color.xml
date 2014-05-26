@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://select_color.gd" type="Script"></ext_resource>
-	<ext_resource path="res://assets/bionickid.fnt" type="Font"></ext_resource>
 	<ext_resource path="res://tank_color_animation.xml" type="PackedScene"></ext_resource>
+	<ext_resource path="res://assets/bionickid.fnt" type="Font"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "selected" </string>
 		<real name="length"> 1 </real>

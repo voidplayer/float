@@ -35,12 +35,6 @@ func _fixed_process(delta):
 	#update variables that keep track of time
 	can_shoot -= delta
 	can_put_track -= delta
-	
-	#if is_colliding():
-		#print(get_collider())
-	#debug
-	if Input.is_action_pressed("debug"):
-		get_parent().print_tree()
 
 	if Input.is_action_pressed("ui_cancel"):
 		global.goto_scene("res://title.xml")
@@ -91,7 +85,7 @@ func shoot():
 		can_shoot = CAN_SHOOT
 		var bi = bullet.instance()
 		bi.set_rot(angle)
-		var pos = get_pos() + get_node("Sprite/bulletPosition").get_pos()* Vector2(sin(angle),cos(angle))
+		var pos = get_pos() + get_node("Sprite/bulletPosition").get_pos()* Vector2(-sin(angle),-cos(angle))
 		bi.set_pos(pos)
 		
 		#dont collide with own tank
@@ -113,7 +107,6 @@ func set_anim(a, reverse = false):
 	if anim != a:
 		anim = a
 		if !reverse:
-			#print(tankid, " ", anim)
 			if anim == "hit":
 				animation.queue(tankcolor + " " + anim)
 			else:
@@ -133,7 +126,6 @@ func update_scoreboard():
 	scoreboard.set_lives(tankid, lives)
 
 func _ready():
-	print("tank ready")
 	bullet = preload("res://bullet.xml")
 	track = preload("res://track.xml")
 	global = get_node("/root/global")
@@ -146,7 +138,3 @@ func _ready():
 	update_scoreboard()
 
 	set_fixed_process(true)
-
-
-func _on_Area2D_body_enter( body ):
-	print(body)

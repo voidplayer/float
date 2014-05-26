@@ -10,7 +10,6 @@ func set_lives(lives):
 	get_node("lives").set_text(str(lives))
 
 func set_color(color):
-	print(color)
 	var anim = get_node("Control/tank/anim")
 	assert anim
 	anim.play(color)

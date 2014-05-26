@@ -8,140 +8,6 @@
 
 	</resource>
 	<resource type="Animation" path="local://2">
-		<string name="resource/name"> "blue rolling" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="9" shared="false">
-				<int> 24 </int>
-				<int> 25 </int>
-				<int> 26 </int>
-				<int> 27 </int>
-				<int> 28 </int>
-				<int> 29 </int>
-				<int> 30 </int>
-				<int> 31 </int>
-				<int> 24 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://3">
-		<string name="resource/name"> "teal rolling" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="9" shared="false">
-				<int> 40 </int>
-				<int> 41 </int>
-				<int> 42 </int>
-				<int> 43 </int>
-				<int> 44 </int>
-				<int> 45 </int>
-				<int> 46 </int>
-				<int> 47 </int>
-				<int> 40 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://4">
-		<string name="resource/name"> "red idle" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="1"> 				1 </real_array>
-			<string> "values" </string>
-			<array  len="1" shared="false">
-				<int> 8 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://5">
-		<string name="resource/name"> "green idle" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="1"> 				1 </real_array>
-			<string> "values" </string>
-			<array  len="1" shared="false">
-				<int> 0 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://6">
-		<string name="resource/name"> "red rolling" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="9" shared="false">
-				<int> 8 </int>
-				<int> 9 </int>
-				<int> 10 </int>
-				<int> 11 </int>
-				<int> 12 </int>
-				<int> 13 </int>
-				<int> 14 </int>
-				<int> 15 </int>
-				<int> 8 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://7">
 		<string name="resource/name"> "blue idle" </string>
 		<real name="length"> 1 </real>
 		<bool name="loop"> False </bool>
@@ -163,7 +29,37 @@
 		</dictionary>
 
 	</resource>
-	<resource type="Animation" path="local://8">
+	<resource type="Animation" path="local://3">
+		<string name="resource/name"> "green rolling" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="false">
+				<int> 0 </int>
+				<int> 1 </int>
+				<int> 2 </int>
+				<int> 3 </int>
+				<int> 4 </int>
+				<int> 5 </int>
+				<int> 6 </int>
+				<int> 7 </int>
+				<int> 0 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://4">
 		<string name="resource/name"> "hit" </string>
 		<real name="length"> 2 </real>
 		<bool name="loop"> False </bool>
@@ -187,141 +83,7 @@
 		</dictionary>
 
 	</resource>
-	<resource type="Animation" path="local://9">
-		<string name="resource/name"> "yellow idle" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="1"> 				1 </real_array>
-			<string> "values" </string>
-			<array  len="1" shared="false">
-				<int> 16 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://10">
-		<string name="resource/name"> "purple rolling" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="9" shared="false">
-				<int> 32 </int>
-				<int> 33 </int>
-				<int> 34 </int>
-				<int> 35 </int>
-				<int> 36 </int>
-				<int> 37 </int>
-				<int> 38 </int>
-				<int> 39 </int>
-				<int> 32 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://11">
-		<string name="resource/name"> "yellow rolling" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="9" shared="false">
-				<int> 16 </int>
-				<int> 17 </int>
-				<int> 18 </int>
-				<int> 19 </int>
-				<int> 20 </int>
-				<int> 21 </int>
-				<int> 22 </int>
-				<int> 23 </int>
-				<int> 16 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://12">
-		<string name="resource/name"> "orange rolling" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> True </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
-			<string> "values" </string>
-			<array  len="9" shared="false">
-				<int> 48 </int>
-				<int> 49 </int>
-				<int> 50 </int>
-				<int> 51 </int>
-				<int> 52 </int>
-				<int> 53 </int>
-				<int> 54 </int>
-				<int> 55 </int>
-				<int> 48 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://13">
-		<string name="resource/name"> "pink idle" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="1"> 				1 </real_array>
-			<string> "values" </string>
-			<array  len="1" shared="false">
-				<int> 56 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://14">
+	<resource type="Animation" path="local://5">
 		<string name="resource/name"> "pink rolling" </string>
 		<real name="length"> 1 </real>
 		<bool name="loop"> True </bool>
@@ -351,10 +113,10 @@
 		</dictionary>
 
 	</resource>
-	<resource type="Animation" path="local://15">
-		<string name="resource/name"> "teal idle" </string>
+	<resource type="Animation" path="local://6">
+		<string name="resource/name"> "yellow rolling" </string>
 		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
+		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
 		<string name="tracks/0/type"> "value" </string>
 		<node_path name="tracks/0/path"> ".:frame" </node_path>
@@ -363,39 +125,25 @@
 			<string> "cont" </string>
 			<bool> False </bool>
 			<string> "transitions" </string>
-			<real_array  len="1"> 				1 </real_array>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
-			<array  len="1" shared="false">
-				<int> 40 </int>
+			<array  len="9" shared="false">
+				<int> 16 </int>
+				<int> 17 </int>
+				<int> 18 </int>
+				<int> 19 </int>
+				<int> 20 </int>
+				<int> 21 </int>
+				<int> 22 </int>
+				<int> 23 </int>
+				<int> 16 </int>
 			</array>
 			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
+			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
 		</dictionary>
 
 	</resource>
-	<resource type="Animation" path="local://16">
-		<string name="resource/name"> "orange idle" </string>
-		<real name="length"> 1 </real>
-		<bool name="loop"> False </bool>
-		<real name="step"> 0.1 </real>
-		<string name="tracks/0/type"> "value" </string>
-		<node_path name="tracks/0/path"> ".:frame" </node_path>
-		<int name="tracks/0/interp"> 1 </int>
-		<dictionary name="tracks/0/keys" shared="false">
-			<string> "cont" </string>
-			<bool> False </bool>
-			<string> "transitions" </string>
-			<real_array  len="1"> 				1 </real_array>
-			<string> "values" </string>
-			<array  len="1" shared="false">
-				<int> 48 </int>
-			</array>
-			<string> "times" </string>
-			<real_array  len="1"> 				0 </real_array>
-		</dictionary>
-
-	</resource>
-	<resource type="Animation" path="local://17">
+	<resource type="Animation" path="local://7">
 		<string name="resource/name"> "purple idle" </string>
 		<real name="length"> 1 </real>
 		<bool name="loop"> False </bool>
@@ -417,8 +165,30 @@
 		</dictionary>
 
 	</resource>
-	<resource type="Animation" path="local://18">
-		<string name="resource/name"> "green rolling" </string>
+	<resource type="Animation" path="local://8">
+		<string name="resource/name"> "pink idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<int> 56 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://9">
+		<string name="resource/name"> "red rolling" </string>
 		<real name="length"> 1 </real>
 		<bool name="loop"> True </bool>
 		<real name="step"> 0.1 </real>
@@ -432,15 +202,245 @@
 			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
 			<string> "values" </string>
 			<array  len="9" shared="false">
+				<int> 8 </int>
+				<int> 9 </int>
+				<int> 10 </int>
+				<int> 11 </int>
+				<int> 12 </int>
+				<int> 13 </int>
+				<int> 14 </int>
+				<int> 15 </int>
+				<int> 8 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://10">
+		<string name="resource/name"> "teal idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<int> 40 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://11">
+		<string name="resource/name"> "blue rolling" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="false">
+				<int> 24 </int>
+				<int> 25 </int>
+				<int> 26 </int>
+				<int> 27 </int>
+				<int> 28 </int>
+				<int> 29 </int>
+				<int> 30 </int>
+				<int> 31 </int>
+				<int> 24 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://12">
+		<string name="resource/name"> "yellow idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<int> 16 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://13">
+		<string name="resource/name"> "orange idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<int> 48 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://14">
+		<string name="resource/name"> "purple rolling" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="false">
+				<int> 32 </int>
+				<int> 33 </int>
+				<int> 34 </int>
+				<int> 35 </int>
+				<int> 36 </int>
+				<int> 37 </int>
+				<int> 38 </int>
+				<int> 39 </int>
+				<int> 32 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://15">
+		<string name="resource/name"> "teal rolling" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="false">
+				<int> 40 </int>
+				<int> 41 </int>
+				<int> 42 </int>
+				<int> 43 </int>
+				<int> 44 </int>
+				<int> 45 </int>
+				<int> 46 </int>
+				<int> 47 </int>
+				<int> 40 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://16">
+		<string name="resource/name"> "red idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<int> 8 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://17">
+		<string name="resource/name"> "green idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> False </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
 				<int> 0 </int>
-				<int> 1 </int>
-				<int> 2 </int>
-				<int> 3 </int>
-				<int> 4 </int>
-				<int> 5 </int>
-				<int> 6 </int>
-				<int> 7 </int>
-				<int> 0 </int>
+			</array>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+		</dictionary>
+
+	</resource>
+	<resource type="Animation" path="local://18">
+		<string name="resource/name"> "orange rolling" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> ".:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "transitions" </string>
+			<real_array  len="9"> 				1, 1, 1, 1, 1, 1, 1, 1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="9" shared="false">
+				<int> 48 </int>
+				<int> 49 </int>
+				<int> 50 </int>
+				<int> 51 </int>
+				<int> 52 </int>
+				<int> 53 </int>
+				<int> 54 </int>
+				<int> 55 </int>
+				<int> 48 </int>
 			</array>
 			<string> "times" </string>
 			<real_array  len="9"> 				0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 </real_array>
@@ -491,23 +491,23 @@
 				<string> "playback/process_mode" </string>
 				<string> "playback/default_blend_time" </string>
 				<string> "root/root" </string>
+				<string> "anims/blue idle" </string>
+				<string> "anims/green rolling" </string>
+				<string> "anims/hit" </string>
+				<string> "anims/pink rolling" </string>
+				<string> "anims/yellow rolling" </string>
+				<string> "anims/purple idle" </string>
+				<string> "anims/pink idle" </string>
+				<string> "anims/red rolling" </string>
+				<string> "anims/teal idle" </string>
 				<string> "anims/blue rolling" </string>
+				<string> "anims/yellow idle" </string>
+				<string> "anims/orange idle" </string>
+				<string> "anims/purple rolling" </string>
 				<string> "anims/teal rolling" </string>
 				<string> "anims/red idle" </string>
 				<string> "anims/green idle" </string>
-				<string> "anims/red rolling" </string>
-				<string> "anims/blue idle" </string>
-				<string> "anims/hit" </string>
-				<string> "anims/yellow idle" </string>
-				<string> "anims/purple rolling" </string>
-				<string> "anims/yellow rolling" </string>
 				<string> "anims/orange rolling" </string>
-				<string> "anims/pink idle" </string>
-				<string> "anims/pink rolling" </string>
-				<string> "anims/teal idle" </string>
-				<string> "anims/orange idle" </string>
-				<string> "anims/purple idle" </string>
-				<string> "anims/green rolling" </string>
 				<string> "playback/active" </string>
 				<string> "playback/speed" </string>
 				<string> "blend_times" </string>
@@ -679,7 +679,7 @@
 				<array  len="0" shared="false">
 				</array>
 				<string> "green idle" </string>
-				<vector2> 27.7469, 0.0345078 </vector2>
+				<vector2> 24.7749, 22.9365 </vector2>
 				<vector2> -0.0170516, 0 </vector2>
 				<int> 0 </int>
 				<vector2_array  len="4"> 					-11.6212, -13.4488, -11.6212, 13.8238, 11.9801, 13.8238, 11.9801, -13.274 </vector2_array>

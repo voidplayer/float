@@ -89,7 +89,7 @@
 			<string> "node_count" </string>
 			<int> 4 </int>
 			<string> "variants" </string>
-			<array  len="26" shared="false">
+			<array  len="25" shared="false">
 				<int> 1 </int>
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
@@ -101,7 +101,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 0 </int>
+							<int> 4 </int>
 							<string> "sources" </string>
 							<array  len="6" shared="false">
 								<string> "res://tank.gd" </string>
@@ -227,18 +227,14 @@
 				<string> "Tank WINS" </string>
 				<int> 0 </int>
 				<real> -1 </real>
-				<dictionary  shared="false">
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
-				</dictionary>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://1">  </resource>
 				<array  len="0" shared="false">
 				</array>
-				<string> "victory" </string>
+				<string> "" </string>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="148"> 				-1, -1, 1, 0, -1, 6, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 7, 5, 0, 0, 0, 8, 8, -1, 15, 9, 6, 10, 7, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 11, 17, 11, 18, 11, 19, 8, 20, 8, 21, 12, 22, 12, 23, 7, 0, 0, 0, 25, 24, -1, 31, 9, 6, 10, 7, 11, 7, 12, 8, 26, 13, 27, 14, 13, 15, 14, 16, 15, 11, 16, 11, 17, 11, 18, 11, 19, 6, 20, 6, 21, 12, 23, 7, 28, 17, 29, 2, 30, 7, 31, 7, 32, 7, 33, 2, 34, 8, 35, 8, 36, 18, 37, 19, 38, 19, 39, 8, 40, 8, 41, 20, 7, 21, 0, 2, 0, 43, 42, -1, 8, 44, 0, 45, 2, 46, 22, 47, 23, 48, 6, 49, 7, 50, 24, 51, 25, 0 </int_array>
+			<int_array  len="146"> 				-1, -1, 1, 0, -1, 6, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 7, 5, 0, 0, 0, 8, 8, -1, 15, 9, 6, 10, 7, 11, 7, 12, 8, 13, 9, 14, 10, 15, 11, 16, 11, 17, 11, 18, 11, 19, 8, 20, 8, 21, 12, 22, 12, 23, 7, 0, 0, 0, 25, 24, -1, 30, 9, 6, 10, 7, 11, 7, 12, 8, 26, 13, 27, 14, 13, 15, 14, 16, 15, 11, 16, 11, 17, 11, 18, 11, 19, 6, 20, 6, 21, 12, 23, 7, 28, 17, 29, 2, 30, 7, 31, 7, 32, 7, 33, 2, 34, 8, 35, 8, 36, 18, 37, 19, 38, 19, 39, 8, 40, 8, 41, 20, 0, 2, 0, 43, 42, -1, 8, 44, 0, 45, 2, 46, 21, 47, 22, 48, 6, 49, 7, 50, 23, 51, 24, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

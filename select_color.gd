@@ -30,6 +30,9 @@ func _ready():
 	set_currents()
 	set_process_input(true)
 
+	#little hack so the scene works isolated
+	global.reset()
+
 func set_currents():
 	set_current("p1")
 	if _2players:
@@ -69,28 +72,39 @@ func _input(ev):
 		global.add_player("p1", selected["p1"])
 		if selected["p2"] != "":
 			global.add_player("p2", selected["p2"])
-		global.goto_scene("res://map1.xml")
+		global.goto_scene("res://map.xml")
 
 
 func process_input(ev, player):
 
-	#keys pressed
+	#keys
 	var up = ev.is_action(player + "up")
 	var down = ev.is_action(player + "down")
 	var left = ev.is_action(player + "left")
 	var right = ev.is_action(player + "right")
 	var shoot = ev.is_action(player + "shoot")
 
+
 	if ev.is_pressed():
+		var move = 0
+
 		if up or down:
-			current[player] += 4
+			move = 4
 		elif right:
-			current[player] += 1
+			move = 1
 		elif left:
-			current[player] -= 1
+			move = -1
 		elif shoot:
 			selected[player] = colors[current[player]]
 			get_node(player+"/anim").play("selected")
+
+		# check to avoid moving to some used spot with more than one player
+		if _2players:
+			for pid in current:
+				if pid != player and current[pid] == (current[player] + move) % (colors.size()):
+					move *= 2
+
+		current[player] += move
 
 		if current[player] > colors.size() - 1:
 			current[player] = current[player] % (colors.size())

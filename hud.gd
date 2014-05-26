@@ -20,3 +20,5 @@ func add_hudtank(hudid, color):
 
 func set_lives(hudid, lives):
 	hud[hudid].set_lives(lives)
+	if lives == 0:
+		get_node("victory/anim").play("victory")

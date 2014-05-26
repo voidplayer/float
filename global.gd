@@ -6,13 +6,14 @@ const GAMEOVER = 2
 const SELECT1P = 3
 const SELECT2P = 4
 
-var status = MENU
+var status = SELECT2P
 var current_scene = null
+var current_map = "res://map1.xml"
 
 var server = null
 
-var players = [] #[ "p1","p2",...]
-var colors = {} #{ "p1":"green", "p2":"red"
+var players = [ "p1","p2"]
+var colors = { "p1":"green", "p2":"red" }
 
 func add_player(pid, color):
 	players.push_back(pid)
@@ -21,6 +22,7 @@ func add_player(pid, color):
 func reset():
 	players = []
 	colors = {}
+	status = MENU
 
 func _process(delta):
 	if server:
