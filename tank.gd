@@ -19,7 +19,7 @@ var global = null
 #members
 var angle = null
 var anim = null
-var can_shoot = CAN_SHOOT
+var can_shoot = 0
 var can_put_track = CAN_PUT_TRACK
 var lives = LIVES
 
@@ -35,9 +35,6 @@ func _fixed_process(delta):
 	#update variables that keep track of time
 	can_shoot -= delta
 	can_put_track -= delta
-
-	if Input.is_action_pressed("ui_cancel"):
-		global.goto_scene("res://title.xml")
 
 	# key definition
 	up = Input.is_action_pressed(tankid + "up")

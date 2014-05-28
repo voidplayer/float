@@ -56,6 +56,16 @@ func set_current(player):
 
 	last[player] = current[player]
 
+func check_player_readiness():
+	if !get_node("p1/anim").is_playing() and !get_node("p1/anim").is_playing():
+		# global.status != global.PLAYING is to avoid a race condition because of buffer (or something) 
+		if selected["p1"] != "" and (!_2players or selected["p2"] != "") and global.status != global.PLAYING:
+			global.status = global.PLAYING
+			global.add_player("p1", selected["p1"])
+			if selected["p2"] != "":
+				global.add_player("p2", selected["p2"])
+			global.goto_scene("res://map.xml")
+
 func _input(ev):
 
 	if ev.is_action("ui_cancel"):
@@ -66,13 +76,7 @@ func _input(ev):
 	if _2players and selected["p2"] == "":
 		process_input(ev, "p2")
 
-	# global.status != global.PLAYING is to avoid a race condition because of buffer (or something) 
-	if selected["p1"] != "" and (!_2players or selected["p2"] != "") and global.status != global.PLAYING:
-		global.status = global.PLAYING
-		global.add_player("p1", selected["p1"])
-		if selected["p2"] != "":
-			global.add_player("p2", selected["p2"])
-		global.goto_scene("res://map.xml")
+
 
 
 func process_input(ev, player):
