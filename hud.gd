@@ -54,5 +54,5 @@ func check_victory():
 		get_node("victory").add_child(winner.get_node("tank/tank").duplicate())
 		get_node("victory").set_text(" wins!")
 		get_node("victory/anim").play("victory")
-		global.status == global.GAMEOVER
+		global.status = global.GAMEOVER
 		get_scene().set_pause(true)
