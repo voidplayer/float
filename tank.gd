@@ -85,7 +85,7 @@ func shoot():
 		var pos = get_pos() + get_node("Sprite/bulletPosition").get_pos()* Vector2(-sin(angle),-cos(angle))
 		bi.set_pos(pos)
 		
-		#dont collide with own tank
+		#dont collide with own tank (this does not work)
 		PS2D.body_add_collision_exception(bi.get_rid(),get_rid())
 		
 		get_parent().add_child(bi)

@@ -73,17 +73,21 @@ func _input(ev):
 			elif ev.is_action("ui_up"):
 				action_menu("up")
 			elif ev.is_action("ui_accept"):
-				if menu[selector] == menu[1]:
+				#1 player selected
+				if selector == 1:
 					global.status = global.SELECT1P
 					global.goto_scene("res://select_color.xml")
-				elif menu[selector] == menu[2]:
+				#2 players selected
+				elif selector == 2:
 					global.status = global.SELECT2P
 					global.goto_scene("res://select_color.xml")
-				elif menu[selector] == menu[3]:
+				#network selected
+				elif selector == 3:
 					get_node("menu").hide()
 					get_node("network").show()
 					status = NETWORK
-				elif menu[selector] == menu[4]:
+				#credits selected
+				elif selector == 4:
 					get_node("menu").hide()
 					get_node("credits").show()
 					status = CREDITS
@@ -94,11 +98,14 @@ func _input(ev):
 			elif ev.is_action("ui_up"):
 				action_menu("up")
 			elif ev.is_action("ui_accept"):
-				if network[selector] == network[1]:
-					pass
-				elif network[selector] == menu[2]:
-					pass
-				elif menu[selector] == menu[3]:
+				#server selected
+				if selector == 1: 
+					print("server")
+				#client selected
+				elif selector == 2:
+					print("client")
+				#back selected
+				elif selector == 3:
 					action_menu("select")
 					get_node("network").hide()
 					get_node("menu").show()
