@@ -61,10 +61,12 @@ func check_player_readiness():
 		# global.status != global.PLAYING is to avoid a race condition because of buffer (or something) 
 		if selected["p1"] != "" and (!_2players or selected["p2"] != "") and global.status != global.PLAYING:
 			global.status = global.PLAYING
-			global.add_player("p1", selected["p1"])
+			global.add_player("p1")
+			global.set_player_color("p1", selected["p1"])
 			if selected["p2"] != "":
-				global.add_player("p2", selected["p2"])
-			global.goto_scene("res://map.xml")
+				global.add_player("p2")
+				global.set_player_color("p2", selected["p2"])
+			global.goto_scene("res://select_map.xml")
 
 func _input(ev):
 

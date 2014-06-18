@@ -24,7 +24,12 @@ func _ready():
 	selector_anim = selector_tank.get_node("Sprite/anim")
 	global = get_node("/root/global")
 	global.reset()
-	#action_menu(menu, "enter_menu")
+	thegreat_play()
+
+func thegreat_play():
+	var letters = [ "t", "h", "e", "g", "r", "e2", "a", "t2" ]
+	for letter in letters:
+		get_node("thegreat/" + letter + "/anim").play("enter")
 
 func action_menu(action):
 	var thismenu = menu
@@ -32,9 +37,7 @@ func action_menu(action):
 		thismenu = network
 	elif status == CREDITS:
 		thismenu = credits
-	#if action == "enter_menu":
-	#	selector = 1
-	#else:
+
 	if action == "down":
 		if selector == thismenu.size()-1:
 			selector = 1
@@ -100,10 +103,14 @@ func _input(ev):
 			elif ev.is_action("ui_accept"):
 				#server selected
 				if selector == 1: 
-					print("server")
+					global.create_server()
+					global.status = global.SERVER
+					global.goto_scene("res://network.xml")
 				#client selected
 				elif selector == 2:
-					print("client")
+					global.connect_to_server()
+					global.status = global.CLIENT
+					global.goto_scene("res://network.xml")
 				#back selected
 				elif selector == 3:
 					action_menu("select")

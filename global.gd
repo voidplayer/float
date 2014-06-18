@@ -5,30 +5,35 @@ const PLAYING = 1
 const GAMEOVER = 2
 const SELECT1P = 3
 const SELECT2P = 4
+const SERVER = 5
+const CLIENT = 6
 
 var status = SELECT2P
 var current_scene = null
-var current_map = "res://map1.xml"
+var current_map = "res://map3.xml"
 
-var server = null
+var nm = null
 
-var players = [ "p1","p2"]
+var id = "p1"
+
+var players = [ "p1","p2" ]
 var colors = { "p1":"green", "p2":"red" }
+var nicks = {}
 
-func add_player(pid, color):
+func add_player(pid):
 	players.push_back(pid)
+
+func set_player_color(pid, color):
 	colors[pid] = color
+
+func set_player_nick(pid, nick):
+	nicks[pid] = nick
 
 func reset():
 	players = []
 	colors = {}
 	status = MENU
 
-func _process(delta):
-	if server:
-		onServerUpdate()
-	if server.is_connection_available():
-		pass
 
 func _ready():
 	var root = get_scene().get_root()
@@ -40,13 +45,14 @@ func goto_scene(scene):
 	current_scene = s.instance()
 	get_scene().get_root().add_child(current_scene)
 
-func onServer():
-	server = TCP_Server.new()
-	if !server.listen(9955):
-		print("Server is up and running")
-	set_process(true)
+func create_server():
+	var nm_class = preload("res://network_manager.gd")
+	nm = nm_class.new()
+	add_child(nm)
+	return nm.create_server()
 
-func onServerUpdate():
-	for player in get_scene().get_nodes_in_group("players"):
-		if !player.connection.is_connected():
-			print("player disconected")
+func connect_to_server():
+	var nm_class = preload("res://network_manager.gd")
+	nm = nm_class.new()
+	add_child(nm)
+	return nm.connect_to_server()
