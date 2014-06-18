@@ -1,0 +1,66 @@
+                      The Great Float 212 2.x alpha
+                      =============================
+
+
+Preamble
+--------
+
+Once upon a time, at one point and during a period, I was kinda obsesed with tanks. As a result I made 2 tank games. `Float 212` and `float 212 3D` in mode 7. They are probably lost in some old CD or lost forever sadly (I dont even own a CD driver anymore!)
+
+This is a remake of one of them, therefore 2.x version :)
+
+I had the silly idea of putting `The Great` in front of all of my games making a long saga of unifinished games. My `The Great` unifished saga if you will :)
+
+I dont even remember where the 212 came from
+
+They were made with Div Games Studio. A now sadly defunted engine and editor but with which I made some friends making games along the way and I managed to keep contact with some of them over the years!
+
+After a few years of inactivity, I wanted to make some games again, and so I started looking at c++ and SFML... and before I knew it, I had some basic space shooter working... but then, it started to get complicated. I was going to need to build some kind of engine to be able to add complexity to the game, and reading some web article it hitted me... I wanted to make games, not engines...
+
+This game was made to learn to use Godot Engine, a very promissing and free engine, where i hope i will dwell in the years coming
+www.godoengine.com
+
+more stuff is hopefully coming
+
+Make Games, not Engines
+
+
+Status
+------
+
+This game is heavily unfinished, but enough that I hope it will be useful to somebody else, since docs and examples are very much lacking for godot engine at this time (jun 2014). I hope this encourage more people to share their little games/demos code ;)
+
+Graphics are awful (as in they will make your eyes bleed), very unpolished in general, no sound, 1 player mode lacks AI and networking is pretty much work in progress
+
+
+controls
+--------
+
+first player: arrows + keypad 0
+second player: wasd + space
+
+
+Thanks
+------
+`Hammer Technologies` for `Div Games Studio`
+`hammer-technologies long lasting Crew` for `Cerves over the years`
+`Juan Linietsky, Ariel Manzur and Okam Studios` for `Godot Engine` (www.godotengine.com)
+`Jakob Fischer` for `bionickid font` (www.pizzadude.dk)
+
+
+License
+-------
+
+The Great Float 212 is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+The Great Float 212 is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with PyX; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA

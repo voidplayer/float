@@ -54,13 +54,9 @@ func _input(ie):
 		if ie.is_action("ui_cancel"):
 			global.goto_scene("res://select_color.xml")
 		elif ie.is_action("ui_left"):
-			print("prev",current_map)
 			select_next()
-			print("next",current_map)
 		elif ie.is_action("ui_right"):
-			print("prev",current_map)
 			select_prev()
-			print("next",current_map)
 		elif ie.is_action("ui_accept"):
 			global.current_map = "res://map" + str(maps[current_map]) + ".xml"
 			global.goto_scene("res://map.xml")
